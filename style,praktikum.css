@@ -1,0 +1,90 @@
+nav {
+ background-color: #292929;
+ padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: #ffffff;
+}
+
+nav ul li a:hover{
+    color: #cf8080;
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url("https://picsum.photos/1200/300");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+}
+
+/* foto container */
+
+.foto-container{
+    display: flex;
+}
+
+.foto{
+    flex: 1;
+    margin: 15px;
+}
+
+.foto img{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+/* foto container selesai */
+
+footer{
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+    flex-direction: column;
+    display: none;
+}
+
+.hamburger{
+    display: block;
+}
+
+}
+#menu-toggle:checked+.hamburger+ul{
+    display: flex;
+}
+
+.container {
+    flex-direction: column;
+}
